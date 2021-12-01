@@ -83,6 +83,7 @@ export const Calculator: React.FC<IProps> = ({primary, secondary}) => {
     <Container color={primary}>
       <TextContainer>
         <NumberText>{displayedValue}</NumberText>
+        {/*TODO: show only if user start typing*/}
         <CommonIcon
           name={'trash'}
           onPress={onClearAll}

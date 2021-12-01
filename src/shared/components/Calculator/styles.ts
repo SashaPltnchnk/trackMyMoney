@@ -10,7 +10,7 @@ export const Container = styled.View`
   border-width: 2px;
   border-radius: 20px;
   border-color: ${({color}: SContainer) => color};
-  margin: 20px 40px 0;
+  margin: 10px 40px;
   padding: 10px;
 `;
 
