@@ -7,6 +7,11 @@ export const colors = {
   violet: '#824670',
   white: '#fff',
   black: '#000',
+
+  // categories icons colors
+  yellow: '#FADF63',
+  blue: '#788BFF',
+  red: '#A7333F',
 };
 
 export const fontSizes = {
