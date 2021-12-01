@@ -1,7 +1,7 @@
 import {View} from 'react-native';
 import React from 'react';
 
-import {Category, incomesCategories} from '../../consts/categories';
+import {Category} from '../../consts/categories';
 import {Operation} from '../../consts/operations';
 
 import {OperationsList} from './OperationsList';
@@ -38,10 +38,7 @@ export const MoneyScreen: React.FC<IProps> = ({
 
       <Calculator primary={primaryColor} secondary={secondaryColor} />
 
-      <Categories
-        categories={incomesCategories}
-        bgPressedColor={secondaryColor}
-      />
+      <Categories categories={categories} bgPressedColor={secondaryColor} />
 
       <LineView bgColor={secondaryColor}>
         <LineText color={primaryColor}>earned today: </LineText>
