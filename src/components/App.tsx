@@ -1,20 +1,14 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+
+import AppNavigator from './AppNavigator';
 
 const App = () => {
   return (
-    <View style={styles.main}>
-      <Text>Exps Screen</Text>
-    </View>
+    <NavigationContainer>
+      <AppNavigator />
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  main: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default App;
