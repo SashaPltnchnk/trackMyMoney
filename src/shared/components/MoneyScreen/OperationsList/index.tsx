@@ -30,16 +30,12 @@ export const OperationsList: React.FC<IProps> = ({
       renderItem={renderItem}
       keyExtractor={keyExtractor}
       scrollEnabled={false}
-      ItemSeparatorComponent={() => {
-        return <Divider color={color} />;
-      }}
-      ListEmptyComponent={() => {
-        return (
-          <Empty>
-            <EmptyText>no operations</EmptyText>
-          </Empty>
-        );
-      }}
+      ItemSeparatorComponent={() => <Divider color={color} />}
+      ListEmptyComponent={() => (
+        <Empty>
+          <EmptyText>no operations</EmptyText>
+        </Empty>
+      )}
     />
   );
 };
